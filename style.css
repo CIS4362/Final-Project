@@ -1,0 +1,15 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.textarea{
+  overflow: auto;
+  width: 500px;
+  height: 250px;
+  border: solid 2px black;
+}
