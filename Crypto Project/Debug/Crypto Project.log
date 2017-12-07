@@ -1,0 +1,10 @@
+﻿  Dictionary.cpp
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(166): warning C4018: '>=': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(176): warning C4018: '<': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(182): warning C4018: '<': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(200): warning C4018: '>=': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(238): warning C4018: '>=': signed/unsigned mismatch
+c:\users\jave1\desktop\school\cryptography\crypto project\crypto project\dictionary.cpp(258): warning C4018: '>=': signed/unsigned mismatch
+  Crypto Project.vcxproj -> C:\Users\Jave1\Desktop\School\Cryptography\Crypto Project\Debug\Crypto Project.exe
+  Crypto Project.vcxproj -> C:\Users\Jave1\Desktop\School\Cryptography\Crypto Project\Debug\Crypto Project.pdb (Partial PDB)
