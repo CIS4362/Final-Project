@@ -30,29 +30,22 @@ int main()
 	s = "new.txt";
 	bool read = true;
 
-	if(read)
-	if (!dict->readFromFile(s)) {
-		cout << "File Not Found" << endl;
-		return 1;
-	}
+	if (read)
+		if (!dict->readFromFile(s)) {
+			cout << "File Not Found" << endl;
+			return 1;
+		}
 
 	cout << "Ready" << endl;
 	
-	cin >> s;
 	
-	vector<char>* v = dict->getChoicesFromWord(s, 0);
-
-	for (int i = 0; i < v->size(); i++) {
-		cout << v->at(i) << ' ';
-	}
-
-	return 0;
-
-	AffineSolver solver(dict);
+	MASCSolver solver(dict);
 
 	cin >> s;
 
-	solver.test(s, 3, 5);
+	cout << solver.solve("qbpq");
+	
+	//solver.test("test", 5);
 	
 	
 	return 0;

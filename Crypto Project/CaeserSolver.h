@@ -13,7 +13,7 @@ class CaeserSolver
 
 	string decrypt(string s, int key);
 
-
+	string keyString;
 	
 
 public:
@@ -21,6 +21,8 @@ public:
 	void test(string s, int key);
 
 	string solve(string s);
+
+	string getKey();
 
 
 	CaeserSolver(Dictionary* dict);

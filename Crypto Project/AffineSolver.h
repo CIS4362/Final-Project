@@ -13,14 +13,16 @@ class AffineSolver
 
 	string decrypt(string s, int a, int b);
 
-
+	string keyString;
 
 
 public:
 
 	void test(string s, int a, int b);
 
-	void solve(string s);
+	string solve(string s);
+
+	string getKey();
 
 
 	AffineSolver(Dictionary* dict);

@@ -8,7 +8,7 @@ AffineSolver::AffineSolver(Dictionary* dict)
 }
 
 
-void AffineSolver::solve(string s) {
+string AffineSolver::solve(string s) {
 
 
 	int* relPrimes = new int[12];
@@ -40,20 +40,12 @@ void AffineSolver::solve(string s) {
 
 			if (vec != NULL) {
 
+				stringstream stream;
 
+				stream << "Key: " << a << " " << b << endl;
 
-				cout << "Key: " << a << " " << b << endl;
-
-
-				for (int c = 0; c < s.length(); c++) {
-					cout << d.at(c);
-					for (int e = 0; e < vec->size(); e++) {
-						if (vec->at(e) == c)
-							cout << ' ';
-					}
-				}
-				cout << endl;
-			//	return;
+				keyString = stream.str();
+				return d;
 			}
 
 

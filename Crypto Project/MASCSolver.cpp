@@ -47,7 +47,7 @@ MASCSolver::MASCSolver(Dictionary* dict)
 
 
 
-void MASCSolver::solve(string s) {
+string MASCSolver::solve(string s) {
 
 
 	//Get Frequency Diagram
@@ -100,78 +100,25 @@ void MASCSolver::solve(string s) {
 
 	}
 
-	for (int i = 0; i < 26; i++) {
-		for (int j = 0; j < 26; j++) {
-		//	cout << array[i][j];// = b[j * 2 + 1] + 97;
-		}
-		cout << endl;
-	}
-
-	cout << endl;
-	cout << endl;
-	cout << endl;
 
 	char* key = new char[26];
 
 	if (solveS(s, array, key)) {
-		cout << endl << "Success!" << endl;
 
-		cout << decrypt(s, key);
+		return decrypt(s, key);
 
 	}
 	else {
-		cout << endl << "Fail" << endl;
-
+		return "NO SOLUTION FOUND";
 	}
 
+	return "";
+
+}
 
 
-
-
-	return;
-
-
-
-
-
-
-
-
-	/*
-
-	char* key = new char[26];
-	char* f = new char[26];
-
-	for (int i = 0; i < 26; i++) {
-		f[i] = sorted[i*2+1] + 97;
-		key[i] = 0;
-
-	}
-	
-	
-	checkPartialKey(s, key, f, 0);
-
-
-
-	return;
-
-	for (int i = 0; i < 26; i++) {
-		key[sorted[i * 2 + 1]] = sortedF.at(i);
-	}
-
-	string a = this->decrypt(s, key);
-
-
-	if (dict->addSpaces(a) != NULL) {
-	//	cout << a << endl;
-		return;
-	}
-
-
-	cout << a << endl;
-	return;
-
-	*/
+string MASCSolver::getKey() {
+	return keyString;
 }
 
 

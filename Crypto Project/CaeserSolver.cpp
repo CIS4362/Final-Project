@@ -4,6 +4,7 @@
 
 CaeserSolver::CaeserSolver(Dictionary* dict)
 {
+	this->keyString = "NO KEY FOUND";
 	this->dict = dict;
 }
 
@@ -16,9 +17,13 @@ string CaeserSolver::solve(string s) {
 		string a = decrypt(s, i);
 
 			if (dict->addSpaces(a) != NULL) {
-				//	cout << "Key: " << i << endl;
-				//cout << a << endl;
-
+				
+				stringstream s;
+				
+				s << "Key: " << i << endl;
+				
+				keyString = s.str();
+				
 				return a;
 			}
 
@@ -28,9 +33,14 @@ string CaeserSolver::solve(string s) {
 
 }
 
+string CaeserSolver::getKey() {
+	return keyString;
+}
+
+
 
 void CaeserSolver::test(string s, int key) {
-	solve(decrypt(s, key *- 1));
+	cout << solve(decrypt(s, key *- 1));
 }
 
 string CaeserSolver::decrypt(string s, int key) {

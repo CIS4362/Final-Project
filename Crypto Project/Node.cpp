@@ -7,6 +7,7 @@ Node::Node()
 {
 	
 	end = false;
+	nodes = NULL;
 }
 
 

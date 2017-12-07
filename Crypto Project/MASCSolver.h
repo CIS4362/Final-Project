@@ -11,6 +11,9 @@ using namespace std;
 class MASCSolver
 {
 
+
+	string keyString;
+
 	Dictionary* dict;
 
 	string decrypt(string s, char* key);
@@ -35,8 +38,9 @@ public:
 
 	void test(string s);
 
-	void solve(string s);
+	string solve(string s);
 
+	string getKey();
 
 	MASCSolver(Dictionary* dict);
 	~MASCSolver();
